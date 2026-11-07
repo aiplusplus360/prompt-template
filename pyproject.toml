@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompt-template"
+version = "0.1.0"
+description = "Render prompt templates without eval: strict variables, explicit escaping, predictable output."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "khawajasafiullah18" }]
+dependencies = []
+keywords = ["prompts", "templates", "llm", "rendering"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Quality Assurance",
+  "Environment :: Console",
+]
+
+[project.urls]
+Homepage = "https://github.com/aiplusplus360/prompt-template"
+
+[project.scripts]
+prompt-template = "prompttemplate.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["prompttemplate*"]
